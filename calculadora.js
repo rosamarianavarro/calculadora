@@ -95,6 +95,24 @@ function frequencia(letra, cadena) {
     return freq;
 }
 
+function fctTeclaDollar(){
+    
+    let euro = parseInt(text);
+    let dollar = euro / 0.860039;
+    text = "$" + dollar.toFixed(2);
+    muestraText();    
+    
+    
+
+}
+
+function fctTeclaEuro(){
+    let dollar = parseInt(text);
+    let euro = dollar * 0.860039;
+    text = euro.toFixed(2) +"€";
+    muestraText();
+}
+
 
 
 
